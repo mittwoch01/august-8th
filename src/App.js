@@ -5,14 +5,18 @@ import './App.css';
 // JSX 문법 사용중 = 소괄호()만 열면 안에 Html문법을 작성할 수 있다. 
 function App() {
    
-  let posts = '강남 고기 맛집'; // 1) 서버에서 가져온 데이터를
-
+  let posts = '강남 고기 맛집'; 
+  // React, Vue, Angular와 같은 프레임워크를 사용하는 이유 : 데이터 바인딩이 쉬워진다.
+  // * 데이터 바인딩이란 ? 
+  // 1) 서버에서 가져온 데이터를 
+  // 2) h4 자리에서 보여줘야 함 > 내가 넣을 자리를 찾아서 { 변수명 } 을 해준다.
+  
   return (
     <div className="App">
       <div className="black-nav">
        <div>개발 blog</div>
       </div>
-      <h4>블로그 글</h4> 
+      <h4> { posts } </h4> 
     </div>
   );
 }
